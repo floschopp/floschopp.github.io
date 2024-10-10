@@ -1,1 +1,138 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--Navigation Head-->
+    <button class="navbutton" id="checklistMenuButton" onclick="checklistMenuButton()">C/L MENU</button>
+
+    <!--Checklist Menu-->
+    <div id="checklistMenu">
+        <h2>Checklist Menu</h2>
+        <p>
+            <button class="checklistMenuListButton" onclick="checklistMenuListButton(1)">BEFORE ENGINE START</button>
+        </p>
+        <p>
+            <button class="checklistMenuListButton" onclick="checklistMenuListButton(2)">CHECKLIST 2</button>
+        </p>
+
+    </div>
+
+    <!--Checklist 1-->
+    <div id="checklist1">
+        <h2>BEFORE ENGINE START</h2>
+        <div class="checklistItem" id="1i1">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b1" name="checklistItem1">
+            <span class="checklistItenLeft">Preflight Check</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">COMPLETED</span>
+        </div>
+        <div class="checklistItem" id="1i2">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b2" name="checklistItem1">
+            <span class="checklistItenLeft">Rudder Pedals</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ADJUSTED AND LOCKED (B)</span>
+        </div>
+        <div class="checklistItem" id="1i3">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b3" name="checklistItem1">
+            <span class="checklistItenLeft">Parking Brake</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">SET</span>
+        </div>
+        <div class="checklistItem" id="1i4">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b4" name="checklistItem1">
+            <span class="checklistItenLeft">Fuel Shut-off Valve</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">OPEN</span>
+        </div>
+        <div class="checklistItem" id="1i5">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b5" name="checklistItem1">
+            <span class="checklistItenLeft">Safety Belts</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">FASTEN (B)</span>
+        </div>
+        <div class="checklistItem" id="1i6">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b6" name="checklistItem1">
+            <span class="checklistItenLeft">Controls</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">FREE</span>
+        </div>
+        <div class="checklistItem" id="1i7">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b7" name="checklistItem1">
+            <span class="checklistItenLeft">Canopy</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">CLOSED AND LATCHED (B)</span>
+        </div>
+        <div class="checklistItem" id="1i8">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b8" name="checklistItem1">
+            <span class="checklistItenLeft">Prop Speed Lever</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">FULL FORWARD</span>
+        </div>
+        <div class="checklistItem" id="1i9">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b9" name="checklistItem1">
+            <span class="checklistItenLeft">Carburetor Heat</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">OFF</span>
+        </div>
+        <div class="checklistItem" id="1i10">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b10" name="checklistItem1">
+            <span class="checklistItenLeft">Avionics Master Switch</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">OFF</span>
+        </div>
+        <div class="checklistItem" id="1i11">
+            <input type="checkbox" class="checklistItemCheckbox" id="1b11" name="checklistItem1">
+            <span class="checklistItenLeft">Transponder</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">STBY</span>
+        </div>
+
+    </div>
+
+    <!--Checklist 2-->
+    <div id="checklist2">
+        <h2>Checklist 2</h2>
+        <div class="checklistItem" id="2i1">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b1" name="checklistItem2">
+            <span class="checklistItenLeft">LEFT</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">RIGHT</span>
+        </div>
+        <div class="checklistItem" id="2i2">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b2" name="checklistItem2">
+            <span class="checklistItenLeft">LEFT</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">RIGHT</span>
+        </div>
+        <div class="checklistItem" id="2i3">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b3" name="checklistItem2">
+            <span class="checklistItenLeft">LEFT</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">RIGHT</span>
+        </div>
+    </div>
+    
+
+    <!--Checklist Completed-->
+    <div id="checklistCompleted">
+        CHECKLIST COMPLETED
+    </div>
+
+    <!--Navigation Bottom-->
+    <button class="navbutton" id="nextChecklistButton" onclick="nextChecklistButton()">NXT CHKLST</button>
+    <button class="navbutton" id="checkedButton" onclick="checkedChecklistButton()">CHECKED</button>
+    <button class="navbutton" id="resetButton" onclick="resetChecklistButton()">RESET</button>
+
+    <!--Version-->
+    <div id="version">
+        DV20 - V0.1
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
