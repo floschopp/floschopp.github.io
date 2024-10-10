@@ -35,6 +35,9 @@ body {
 #checklist2{
     display: none;
 }
+#checklist3{
+    display: none;
+}
 
 h2 {
     color: #f2f2f2;
@@ -45,7 +48,7 @@ h2 {
 
 .checklistItem {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     color: #196e6f;
     display: flex;           /* Flexbox für die Ausrichtung */
     justify-content: space-between; /* Verteilung zwischen links und rechts */
@@ -89,7 +92,7 @@ h2 {
     color: white;
     text-align: center;
     position: fixed;
-    bottom: 140px;
+    bottom: 80px;
     width: 100%;
 }
 
@@ -99,6 +102,7 @@ h2 {
   border: 3px solid #38383c;
   height: 50px;
   width: 150px;
+  font-size: 15px;
 }
 
 .navbutton:active {

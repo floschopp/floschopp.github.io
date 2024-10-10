@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>DV20 CHCKLST</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -16,8 +16,12 @@
             <button class="checklistMenuListButton" onclick="checklistMenuListButton(1)">BEFORE ENGINE START</button>
         </p>
         <p>
-            <button class="checklistMenuListButton" onclick="checklistMenuListButton(2)">CHECKLIST 2</button>
+            <button class="checklistMenuListButton" onclick="checklistMenuListButton(2)">STARTING ENGINE</button>
         </p>
+        <p>
+            <button class="checklistMenuListButton" onclick="checklistMenuListButton(3)">AFTER STARTING ENGINE</button>
+        </p>
+
 
     </div>
 
@@ -95,25 +99,147 @@
 
     <!--Checklist 2-->
     <div id="checklist2">
-        <h2>Checklist 2</h2>
+        <h2>STARTING ENGINE</h2>
         <div class="checklistItem" id="2i1">
             <input type="checkbox" class="checklistItemCheckbox" id="2b1" name="checklistItem2">
-            <span class="checklistItenLeft">LEFT</span>
+            <span class="checklistItenLeft">GEN/BAT</span>
             <span class="checklistItemCenter">..............</span>
-            <span class="checklistItemRight">RIGHT</span>
+            <span class="checklistItemRight">ON</span>
         </div>
         <div class="checklistItem" id="2i2">
             <input type="checkbox" class="checklistItemCheckbox" id="2b2" name="checklistItem2">
-            <span class="checklistItenLeft">LEFT</span>
+            <span class="checklistItenLeft">Circuit Brakers</span>
             <span class="checklistItemCenter">..............</span>
-            <span class="checklistItemRight">RIGHT</span>
+            <span class="checklistItemRight">PRESSED IN</span>
         </div>
         <div class="checklistItem" id="2i3">
             <input type="checkbox" class="checklistItemCheckbox" id="2b3" name="checklistItem2">
-            <span class="checklistItenLeft">LEFT</span>
+            <span class="checklistItenLeft">Generator Warning Light</span>
             <span class="checklistItemCenter">..............</span>
-            <span class="checklistItemRight">RIGHT</span>
+            <span class="checklistItemRight">ILLUMINATED</span>
         </div>
+        <div class="checklistItem" id="2i4">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b4" name="checklistItem2">
+            <span class="checklistItenLeft">Fuel Press Warning Light</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ILLUMINATED</span>
+        </div>
+        <div class="checklistItem" id="2i5">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b5" name="checklistItem2">
+            <span class="checklistItenLeft">Canopy Warning Light</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">OFF</span>
+        </div>
+        <div class="checklistItem" id="2i6">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b6" name="checklistItem2">
+            <span class="checklistItenLeft">Voltage</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">MIN YELLOW ARC</span>
+        </div>
+        <div class="checklistItem" id="2i7">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b7" name="checklistItem2">
+            <span class="checklistItenLeft">Electric Fuel Pump</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ON</span>
+        </div>
+        <div class="checklistItem" id="2i8">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b8" name="checklistItem2">
+            <span class="checklistItenLeft">Fuel Press Warning Light</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">OFF</span>
+        </div>
+        <div class="checklistItem" id="2i9">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b9" name="checklistItem2">
+            <span class="checklistItenLeft">ACL/Strobe Light</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ON</span>
+        </div>
+        <div class="checklistItem" id="2i10">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b10" name="checklistItem2">
+            <span class="checklistItenLeft">THROTTLE (COLD START)</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">IDLE</span>
+        </div>
+        <div class="checklistItem" id="2i11">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b11" name="checklistItem2">
+            <span class="checklistItenLeft">THROTTLE (WARM START)</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">1CM FORWARD</span>
+        </div>
+        <div class="checklistItem" id="2i12">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b12" name="checklistItem2">
+            <span class="checklistItenLeft">Choke (COLD START)</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ON AND HOLD</span>
+        </div>
+        <div class="checklistItem" id="2i13">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b13" name="checklistItem2">
+            <span class="checklistItenLeft">Propeller Area</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">CLEAR</span>
+        </div>
+        <div class="checklistItem" id="2i14">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b14" name="checklistItem2">
+            <span class="checklistItenLeft">Ignition Key</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">START</span>
+        </div>
+        <div class="checklistItem" id="2i15">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b15" name="checklistItem2">
+            <span class="checklistItenLeft">Throttle</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">MAX 1200 RPM</span>
+        </div>
+        <div class="checklistItem" id="2i16">
+            <input type="checkbox" class="checklistItemCheckbox" id="2b16" name="checklistItem2">
+            <span class="checklistItenLeft">Oil Pressure</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">WITHIN GREEN RANGE</span>
+        </div>
+    </div>
+
+    <!--Checklist 3-->
+    <div id="checklist3">
+        <h2>AFTER ENGINE START</h2>
+        <div class="checklistItem" id="3i1">
+            <input type="checkbox" class="checklistItemCheckbox" id="3b1" name="checklistItem3">
+            <span class="checklistItenLeft">Amperemeter</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">CHARGING</span>
+        </div>
+        <div class="checklistItem" id="3i2">
+            <input type="checkbox" class="checklistItemCheckbox" id="3b2" name="checklistItem3">
+            <span class="checklistItenLeft">Generator Warning Light</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">OFF</span>
+        </div>
+        <div class="checklistItem" id="3i3">
+            <input type="checkbox" class="checklistItemCheckbox" id="3b3" name="checklistItem3">
+            <span class="checklistItenLeft">Electric Fuel Pump</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">OFF</span>
+        </div>
+        <div class="checklistItem" id="3i4">
+            <input type="checkbox" class="checklistItemCheckbox" id="3b4" name="checklistItem3">
+            <span class="checklistItenLeft">Fuel Press Warning Light</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">remains OFF</span>
+        </div>
+        <div class="checklistItem" id="3i5">
+            <input type="checkbox" class="checklistItemCheckbox" id="3b5" name="checklistItem3">
+            <span class="checklistItenLeft">Exterior Lights</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">AS REQUIRED</span>
+        </div>
+        <div class="checklistItem" id="3i6">
+            <input type="checkbox" class="checklistItemCheckbox" id="3b6" name="checklistItem3">
+            <span class="checklistItenLeft">Avionics Master Switch</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ON</span>
+        </div>
+
+
+
     </div>
     
 
@@ -129,7 +255,7 @@
 
     <!--Version-->
     <div id="version">
-        DV20 - V0.3
+        DV20 - V0.4
     </div>
 
     <!--Script-->

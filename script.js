@@ -1,5 +1,5 @@
 //CONSTANTS
-const totalchecklists = 2;
+const totalchecklists = 3;
 
 //GLOBALS
 var checklistCurrent = 0;
@@ -136,7 +136,10 @@ function determineChecklistItemsTotal(checklistnum) {
       return 11;
     //checklist 2
     case 2:
-      return 3;
+      return 16;
+    //checklist 3
+    case 3:
+      return 6;
     default:
       return 0;
   }
