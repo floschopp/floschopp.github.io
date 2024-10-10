@@ -47,6 +47,12 @@ h2 {
     text-decoration: none;
     font-size: 25px;
     color: #196e6f;
+    display: flex;           /* Flexbox für die Ausrichtung */
+    justify-content: space-between; /* Verteilung zwischen links und rechts */
+    align-items: center;     /* Vertikale Ausrichtung der Items */
+    width: 100%;             /* Volle Breite für den Container */
+    box-sizing: border-box;  /* Rand und Padding in der Breite enthalten */
+    padding: 10px 0;         /* Optionaler Innenabstand (Padding) */
 }
 
 .checklistItemCheckbox {
@@ -62,16 +68,18 @@ h2 {
 }
 
 .checklistItemLeft {
-    display: inline-block;
-    width: 50%;
-    text-align: left;
+    margin-right: 10px;      /* Abstand rechts vom linken Text */
 }
 
+.checklistItemCenter {
+    flex-grow: 1;            /* Füllt den verbleibenden Platz */
+    text-align: center;      /* Zentriert den Text */
+    padding: 0 10px;         /* Innenabstand links und rechts */
+}
 
 .checklistItemRight {
-    display: inline-block;
-    width: 50%;
-    text-align: right;
+    padding-left: 10px;       /* Abstand links vom rechten Text */
+    padding-right: 10px;
 }
 
 #checklistCompleted{
