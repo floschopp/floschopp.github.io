@@ -43,9 +43,9 @@ function checklistMenuButton() {
 }
 
 function resetChecklistButton() {
-  //if(confirm("RESET - are you sure?") == false){
-    //return;
-  //}
+  if(confirm("RESET - are you sure?") == false){
+    return;
+  }
   // reset color of all checklist items of current checklist
   for (var i = 1; i < checklistItemsTotal+1; i++) { 
     document.getElementById(checklistCurrent + "i" + i).style.color = "#196e6f";
