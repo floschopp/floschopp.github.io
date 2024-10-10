@@ -15,11 +15,12 @@ body {
 /* Checklist Menu */
 .checklistMenuListButton {
     width: 738px;
-    height: 40px;
+    height: 50px;
     margin: 15px;
     background-color: #28272e;
     color: #6e6e6f;
     border: 3px solid #38383c;
+    font-size: 18px;
 }
 .checklistMenuListButton:active {
     background-color: #38383c;
@@ -46,7 +47,6 @@ h2 {
     text-decoration: none;
     font-size: 25px;
     color: #196e6f;
-
 }
 
 .checklistItemCheckbox {
@@ -59,6 +59,19 @@ h2 {
     text-align: center;
     line-height: 25px;
     color: #196e6f;
+}
+
+.checklistItemLeft {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+
+.checklistItemRight {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
 }
 
 #checklistCompleted{
@@ -76,8 +89,8 @@ h2 {
   background-color: #28272e;
   color: #6e6e6f;
   border: 3px solid #38383c;
-  height: 40px;
-  width: 120px;
+  height: 50px;
+  width: 150px;
 }
 
 .navbutton:active {
