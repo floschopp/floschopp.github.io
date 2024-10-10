@@ -27,7 +27,7 @@ function checklistMenuListButton(_checklistNum) {
 
 function checklistMenuButton() {
   //reset current checklist
-  resetChecklistButton();
+  resetChecklistButton(true);
   //show menu
   document.getElementById("checklistMenu").style.display = "block";
   //hide current checklist
@@ -42,9 +42,12 @@ function checklistMenuButton() {
   document.getElementById("checklistCompleted").style.display = "none";
 }
 
-function resetChecklistButton() {
-  if(confirm("RESET - are you sure?") == false){
-    return;
+function resetChecklistButton(protectionOverride) {
+  if(protectionOverride != true) {
+    //protection against accidental reset
+    if(confirm("RESET - are you sure?") == false){
+      return;
+    }
   }
   // reset color of all checklist items of current checklist
   for (var i = 1; i < checklistItemsTotal+1; i++) { 
@@ -101,7 +104,7 @@ function checkedChecklistButton() {
 
 function nextChecklistButton() {
   //reset current checklist
-  resetChecklistButton();
+  resetChecklistButton(true);
   //hide current checklist
   document.getElementById("checklist" + checklistCurrent).style.display = "none";
   //show next checklist
