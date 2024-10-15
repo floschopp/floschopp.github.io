@@ -14,6 +14,8 @@ function checklistMenuListButton(_checklistNum) {
   checklistItemsTotal = determineChecklistItemsTotal(_checklistNum);
   //hide menu
   document.getElementById("checklistMenu").style.display = "none";
+  //hide emer checklist menu
+  document.getElementById("emerChecklistMenu").style.display = "none";
   //show checklist 1
   document.getElementById("checklist" + _checklistNum).style.display = "block";
   //show checklist navbuttons
@@ -25,13 +27,40 @@ function checklistMenuListButton(_checklistNum) {
   activeChecklistItem(checklistCurrent, checklistItemCurrent);
 }
 
+function emerChecklistMenuButton() {
+  //reset current checklist if there is a active checklist
+  if(checklistCurrent != 0) {
+    resetChecklistButton(true);
+  }
+  //hide normal checklist menu
+  document.getElementById("checklistMenu").style.display = "none";
+  //hide current checklist if there is a active checklist
+  if(checklistCurrent != 0) {
+    document.getElementById("checklist" + checklistCurrent).style.display = "none";
+  }
+  //hide checklist navbuttons
+  document.getElementById("checkedButton").style.display = "none";
+  document.getElementById("resetButton").style.display = "none";
+  document.getElementById("nextChecklistButton").style.display = "none";
+  //hide checklist completed message
+  document.getElementById("checklistCompleted").style.display = "none";  
+  //show emergency checklist menu
+  document.getElementById("emerChecklistMenu").style.display = "block";
+  //show checklist Menu Button
+  document.getElementById("checklistMenuButton").style.display = "block";
+}
+
 function checklistMenuButton() {
-  //reset current checklist
-  resetChecklistButton(true);
+  //reset current checklist if there is a active checklist
+  if(checklistCurrent != 0) {
+    resetChecklistButton(true);
+  }
   //show menu
   document.getElementById("checklistMenu").style.display = "block";
-  //hide current checklist
-  document.getElementById("checklist" + checklistCurrent).style.display = "none";
+  //hide current checklist if there is a active checklist
+  if(checklistCurrent != 0) {
+    document.getElementById("checklist" + checklistCurrent).style.display = "none";
+  }
   //hide checklist navbuttons
   document.getElementById("checkedButton").style.display = "none";
   document.getElementById("resetButton").style.display = "none";
@@ -40,6 +69,9 @@ function checklistMenuButton() {
   document.getElementById("checklistMenuButton").style.display = "none";
   //hide checklist completed message
   document.getElementById("checklistCompleted").style.display = "none";
+  //hide emergency checklist menu
+  document.getElementById("emerChecklistMenu").style.display = "none";
+
 }
 
 function resetChecklistButton(protectionOverride) {
@@ -90,6 +122,11 @@ function checkedChecklistButton() {
     //hide Checked Button
     document.getElementById("checkedButton").style.display = "none";
     //check if all checklists are completed
+    //check if current checklist is emer checklist
+    if(checklistCurrent > 20) {
+      return;
+    }
+    //check if last checklist is completed
     if(checklistCurrent == totalchecklists) {
       return;
     }
@@ -143,6 +180,9 @@ function determineChecklistItemsTotal(checklistnum) {
     //checklist 3
     case 3:
       return 6;
+    //checklist 21
+    case 21:
+      return 11;
     default:
       return 0;
   }

@@ -12,6 +12,15 @@ body {
   display: none;
 }
 
+#emerMenuButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: block;
+  color: red;
+  border: 3px solid red;
+}
+
 /* Checklist Menu */
 .checklistMenuListButton {
     width: 738px;
@@ -28,6 +37,14 @@ body {
     border: 1px solid #38383c;
 }
 
+#emerChecklistMenu {
+  display: none;
+}
+
+#h2EmerChecklistMenu{
+  color: red;
+}
+
 /* Checklist */
 #checklist1{
     display: none;
@@ -38,6 +55,10 @@ body {
 #checklist3{
     display: none;
 }
+#checklist21{
+  display: none;
+}
+
 
 h2 {
     color: #f2f2f2;
@@ -83,6 +104,14 @@ h2 {
 .checklistItemRight {
     padding-left: 10px;       /* Abstand links vom rechten Text */
     padding-right: 10px;
+}
+
+.checklistInfoItem {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #checklistCompleted{
