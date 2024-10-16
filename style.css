@@ -58,6 +58,10 @@ body {
 #checklist21{
   display: none;
 }
+#checklist22{
+  display: none;
+}
+
 
 
 h2 {
@@ -132,6 +136,7 @@ h2 {
   height: 50px;
   width: 150px;
   font-size: 15px;
+  touch-action: manipulation;
 }
 
 .navbutton:active {

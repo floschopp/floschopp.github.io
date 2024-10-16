@@ -6,6 +6,15 @@ var checklistCurrent = 0;
 var checklistItemCurrent = 0;
 var checklistItemsTotal = 0;
 
+//Functions Global Use
+//prevent accidental reloading of page
+function closeIt()
+{
+  return "Any string value here forces a dialog box to \n" + 
+         "appear before closing the window.";
+}
+window.onbeforeunload = closeIt;
+
 //Functions for Buttons
 function checklistMenuListButton(_checklistNum) {
   //set globals
@@ -183,6 +192,9 @@ function determineChecklistItemsTotal(checklistnum) {
     //checklist 21
     case 21:
       return 11;
+    //checklist 22
+    case 22:
+      return 6;
     default:
       return 0;
   }

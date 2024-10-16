@@ -31,7 +31,7 @@
             <button class="checklistMenuListButton" onclick="checklistMenuListButton(21)">ENGINE FAILURE AFTER TAKEOFF</button>
         </p>
         <p>
-            <button class="checklistMenuListButton" onclick="nothing(2)">ROUGH ENGINE DURING FLIGHT</button>
+            <button class="checklistMenuListButton" onclick="checklistMenuListButton(22)">ENGINE RUNNING ROUGHLY</button>
         </p>
         <p>
             <button class="checklistMenuListButton" onclick="nothing(3)">ENG RESTART WITH PROP WINDMILLING</button>
@@ -329,6 +329,55 @@
             <span class="checklistItemRight">OFF</span>
         </div>
     </div>
+
+    <!--Checklist 22-->
+    <div id="checklist22">
+        <h2>ENGINE RUNNING ROUGHLY</h2>
+        <div class="checklistItem" id="22i1">
+            <input type="checkbox" class="checklistItemCheckbox" id="22b1" name="checklistItem2">
+            <span class="checklistItenLeft">Carburator Heat</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ON</span>
+        </div>
+        <div class="checklistItem" id="22i2">
+            <input type="checkbox" class="checklistItemCheckbox" id="22b2" name="checklistItem2">
+            <span class="checklistItenLeft">Electric Fuel Pump</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">ON</span>
+        </div>
+        <div class="checklistItem" id="22i3">
+            <input type="checkbox" class="checklistItemCheckbox" id="22b3" name="checklistItem2">
+            <span class="checklistItenLeft">Choke</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">check OFF</span>
+        </div>
+        <div class="checklistItem" id="22i4">
+            <input type="checkbox" class="checklistItemCheckbox" id="22b4" name="checklistItem2">
+            <span class="checklistItenLeft">Fuel Shut-off Valve</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">check OPEN</span>
+        </div>
+        <div class="checklistItem" id="22i5">
+            <input type="checkbox" class="checklistItemCheckbox" id="22b5" name="checklistItem2">
+            <span class="checklistItenLeft">Ignition Switch</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">cycle L-BOTH-R-BOTH</span>
+        </div>
+        <div class="checklistItem" id="22i6">
+            <input type="checkbox" class="checklistItemCheckbox" id="22b6" name="checklistItem2">
+            <span class="checklistItenLeft">Throttle</span>
+            <span class="checklistItemCenter">..............</span>
+            <span class="checklistItemRight">at present position</span>
+        </div>
+        <div class="checklistInfoItem">
+            No Improvement:
+        </div>
+        <div class="checklistInfoItem">
+            reduce throttle to minimum required power, land as soon as possible
+        </div>
+
+
+    </div>
     
 
     <!--Checklist Completed-->
@@ -343,7 +392,7 @@
 
     <!--Version-->
     <div id="version">
-        DV20 - V0.5
+        DV20 - V0.6
     </div>
 
     <!--Script-->
