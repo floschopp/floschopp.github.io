@@ -1,5 +1,5 @@
 //CONSTANTS
-const totalchecklists = 3;
+const totalchecklists = 10;
 
 //GLOBALS
 var checklistCurrent = 0;
@@ -13,7 +13,7 @@ function closeIt()
   return "Any string value here forces a dialog box to \n" + 
          "appear before closing the window.";
 }
-window.onbeforeunload = closeIt;
+//window.onbeforeunload = closeIt;
 
 //Functions for Buttons
 function checklistMenuListButton(_checklistNum) {
@@ -189,6 +189,27 @@ function determineChecklistItemsTotal(checklistnum) {
     //checklist 3
     case 3:
       return 6;
+    //checklist 4
+    case 4:
+      return 9;
+    //checklist 5
+    case 5:
+      return 3;
+    //checklist 6
+    case 6:
+      return 13;
+    //checklist 7
+    case 7:
+      return 11;
+    //checklist 8
+    case 8:
+      return 4;
+    //checklist 9
+    case 9:
+      return 5;
+    //checklist 10
+    case 10:
+      return 8;
     //checklist 21
     case 21:
       return 11;

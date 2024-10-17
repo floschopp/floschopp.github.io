@@ -23,9 +23,9 @@ body {
 
 /* Checklist Menu */
 .checklistMenuListButton {
-    width: 738px;
+    width: 742px;
     height: 50px;
-    margin: 15px;
+    margin: 10px;
     background-color: #28272e;
     color: #6e6e6f;
     border: 3px solid #38383c;
@@ -53,6 +53,27 @@ body {
     display: none;
 }
 #checklist3{
+    display: none;
+}
+#checklist4{
+    display: none;
+}
+#checklist5{
+    display: none;
+}
+#checklist6{
+    display: none;
+}
+#checklist7{
+    display: none;
+}
+#checklist8{
+    display: none;
+}
+#checklist9{
+    display: none;
+}
+#checklist10{
     display: none;
 }
 #checklist21{
