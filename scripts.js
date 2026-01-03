@@ -74,9 +74,15 @@ function checkHrChallenge(userInput) {
     setTimeout(() => {
         document.getElementById("flash").classList.remove("green-flash", "red-flash");
     }, 500);
-    // Change button to reload after submission
+    // Change button to new task
     document.getElementById("hrsubmit").innerHTML = "Neue Aufgabe";
-    document.getElementById("hrsubmit").onclick = function() { location.reload(); };
+    document.getElementById("hrsubmit").onclick = function() {
+        document.getElementById("hranswer").value = "";
+        globalSolution = updateHrChallenge();
+        document.getElementById("heartRateSolution").innerHTML = "";
+        document.getElementById("hrsubmit").innerHTML = "Submit";
+        document.getElementById("hrsubmit").onclick = function() { checkHrChallenge(document.getElementById('hranswer').value); };
+    };
     return correct;
 }
 
